@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACY PROJECT Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Eater&family=Elsie+Swash+Caps:wght@400;900&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Labrada:ital,wght@0,100..900;1,100..900&family=Philosopher&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+       <!-- html2pdf.js library for generating the PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="cv-tracy">
+    <header class="main-header">
+        <div class="top-bar-text">
+            <span class="right-text"><img src="./img/plp logo.jpg" alt="plp logo"></span>
+            <span>
+                 <!-- The button to trigger the download.-->
+                    <button id="download-button">
+                        Download as PDF
+                    </button>             
+            </span>
+        </div>
+        <div class="header-content">
+            <div class="logo">
+                TRACY OBONYO
+                <span class="logo-subtext">Civil Engineer / Junior web developer</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="priofile-pic">
+                <img src="./img/tracey.jpg" alt="Tracy Pic">
+            </div>
+            <h2>About me</h2>
+            <div class="decorative-line"></div>
+            <p>
+                I am a civil engineering student with a unique blend of expertise, bridging the gap between physical infrastructure and digital solutions. My foundation in structural analysis, fluid mechanics, and sustainable design provides a strong understanding of the real-world challenges facing our built environment. I complement this with a passion for software engineering which I'm currently learning, and plan to use my skills in programming, data analysis, and application development to create smarter, more efficient solutions.
+            </p>
+        </section>
+
+      
+        <section class="cards-section">
+            <div class="card-container">
+                <div class="card" id="experience">
+                    <h3>EXPERIENCE</h3>
+                    <div>
+                        <h4>Clerk of Works(Attachee)- NG-CDF Kisumu west</h4>
+                        <p>Prepared weekly reports detailing the progress and achievement of project outputs, outlining challenges and recommendations for future planning.</p>
+                        <p>Inspecting construction sites regularly to ensure that the work is being performed according to the plans and within safety guidelines</p>
+                        <span class="dots">...</span><span class="more">
+                            <h4>Site Agent- OBJ Contractors </h4>
+                            <p>During fieldwork I was responsible for the management of the construction site in order to achieve the required project delivery to the customers objectives,while maintaining standards of health and safety , quality environmental impact and cost control</p>
+                            <p>Also, deliver the work to the specified quality without defects and also ensure the materials are delivered on time and the projects run within budget.</p>
+                        </span>
+                        <button onclick="toggleReadMore(this)" class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card" id="education">
+                    <h3>EDUCATION</h3>
+                    <div>
+                        <h4>The Technical University of Kenya (TUK)(Sept 2022- To date)</h4>
+                        <p>Studying Civil Engineering Technology and majoring in Structural and Highway design</p>
+                        <h4>The Kisumu National Polytechnic (Sept 2018 - Dec 2021)</h4>
+                        <p>I attained my college diploma in Civil Engineering, with a final-year specialization in road design.</p>
+                        <span class="dots">...</span><span class="more">
+                            <h4>Ng'iya Girls High (Jan 2013-Dec 2017)</h4>
+                            <p>Attained my high school diploma . Got a C+ in the KCSE exams</p>
+                        </span>
+                        <button onclick="toggleReadMore(this)" class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card" id="skills">
+                    <h3>SKILLS</h3>
+                    <ul>
+                        <li>Written and Verbal Communication skill</li>
+                        <li>Multitasking and prioritizing</li>
+                        <li>Software Proficiency e.g CAD Software</li>
+                        <li>Computer proficiency</li>
+                        <li>Attention to detail</li>
+                        <li>Math skill</li>
+                        <li>Organization skills</li>
+                    </ul>
+                </div>
+                <div class="card" id="contact">
+                    <h3>CERTIFICATION</h3>
+                    <ul>
+                        <li>International Computer Driving License (ICDL) Certification</li>
+                        <li>Diploma KNEC Certficate (Civil Engineering)</li>
+                        <li>Instituition of Engineering and Technologists and Technicians(IET) board certificate.</li>
+                        <li>Kenya National Examination Council (KNEC) Certificate</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Contact Me</h4>
+                    <p>Email: tracyobonyo30@gmail.com</p>
+                    <p>Phone: (254) 797-119374</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com/in/uno-gifty-78a579378/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/dashboard" target="_blank">GitHub</a></li>
+                        <li><a href="https://x.com/trac54348" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Designed By Tracy Obonyo (PLP 2025).</p>
+            </div>
+        </footer>
+    </div>
+        
+        <script>
+            function toggleReadMore(button) {
+                // Get the parent div of the button (which contains the dots and more text)
+                const parentDiv = button.closest('div');
+        
+                // Find the specific 'dots' and 'more' elements within that parent div
+                const dots = parentDiv.querySelector(".dots");
+                const moreText = parentDiv.querySelector(".more");
+        
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    button.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    button.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+                console.log(dots, moreText, button);
+            }
+                    // Get the download button and the CV content container
+                const downloadButton = document.getElementById('download-button');
+                const cvContent = document.getElementById('cv-tracy');
+
+                // Add a click event listener to the button
+                downloadButton.addEventListener('click', () => {
+                    // Options for the PDF generation
+                    const options = {
+                        margin: 0.5,
+                        filename: 'Tracy_CV.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2 },
+                        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                    };
+
+                    // Use the html2pdf library to generate the PDF
+                    html2pdf().from(cvContent).set(options).save();
+                });
+        </script>
+</body>
+</html>
